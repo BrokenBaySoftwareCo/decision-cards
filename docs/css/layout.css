@@ -1,0 +1,34 @@
+* { box-sizing: border-box }
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.2rem;
+}
+h3 {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: "Poppins","Helvetica","Arial","Lucida",sans-serif;
+	font-size: .9rem;
+	background-image: url(/img/background_mobile.jpg);
+}
+
+html,
+body
+{
+	height: 100%;
+}
+
+#goodthing {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	scroll-snap-type: x mandatory;
+	box-sizing: border-box;
+}
