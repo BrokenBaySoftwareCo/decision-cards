@@ -131,50 +131,6 @@ const Counter = (props /*: Props */) => {
   return html`
     <div className="${styles.container}">
       <div className="${styles.cardContainer}">
-        <div className="${styles.card} ${styles.cardBox} ${styles.titleCard}">
-          <div className="${styles.cardBoxInside}">
-            <h1 className="${styles.hide}">Agilitrix Decision Cards</h1>
-            <h2 className="${styles.hide}">
-              Unlocking high performance one decision at a time
-            </h2>
-          </div>
-          <img
-            class="${styles.pointer}"
-            src="./img/hand-pointing.png"
-            title=""
-          />
-        </div>
-      </div>
-      <div className="${styles.cardContainer}">
-        <div
-          className="${styles.card} ${styles.cardBox} ${styles.instructionCard}"
-        >
-          <div
-            className="${styles.card} ${styles.cardBoxInside} ${styles.instructionCardBoxInside}"
-          >
-            <ol>
-              <h3>Instructions:</h3>
-              <li>Pick a decision that needs to be made. Explain it</li>
-              <li>
-                Make sure everyone has a hand of 5 decision cards or this URL
-              </li>
-              <li>
-                Everyone secretly picks a card indicating their role in the
-                decision
-              </li>
-              <li>When everyone is ready, reveal the cards</li>
-              <li>
-                If there is agreement about who the owners are, wonderful!
-              </li>
-              <li>
-                If there is disagreement, have everyone share their thinking.
-                Then repeat card selection.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div className="${styles.cardContainer}">
         <img
           class="${styles.card}"
           src="./img/001-i-decide.png"
