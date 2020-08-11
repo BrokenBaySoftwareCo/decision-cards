@@ -32,7 +32,7 @@ rawStyles({
     paddingInlineStart: "0px",
   },
   li: {
-    lineHeight: "1.5rem",
+    lineHeight: "1.25rem",
     paddingBottom: "1rem",
   },
 });
