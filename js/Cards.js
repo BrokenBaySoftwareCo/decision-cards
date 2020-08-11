@@ -29,6 +29,7 @@ setSeed(seed);
 rawStyles({
   ol: {
     listStylePosition: "inside",
+    paddingInlineStart: "0px",
   },
   li: {
     lineHeight: "1.5rem",
@@ -55,7 +56,7 @@ const [styles] = createStyles({
     display: "grid",
     gridTemplate: '"a a a a a a a"',
   },
-  cardContainer: {
+  cardContainer1: {
     height: "100%",
     width: "100vw",
     display: "flex",
@@ -63,38 +64,32 @@ const [styles] = createStyles({
     justifyContent: "center",
     scrollSnapAlign: "start",
     scrollSnapStop: "normal",
+  },
+  cardContainer2: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
     fontSize: "1rem",
     color: "#333",
-    position: "relative",
   },
-  card: {
-    marginLeft: "auto",
-    marginRight: "auto",
+  cardBox: {
     width: "95%",
     maxWidth: "400px",
     borderRadius: "17px",
     boxShadow: "5px 5px 5px #00000040",
+    backgroundColor: "white",
+    overflow: "hidden",
+  },
+  card: {
+    width: "100%",
+  },
+  heightMachine: {
+    height: "0",
+    paddingTop: "139.3%",
+    position: "relative",
   },
   hide: {
     display: "none",
-  },
-  titleCard: {
-    "& > h1": {
-      display: "none",
-    },
-    "& > h2": {
-      display: "none",
-    },
-    backgroundImage: 'url("/img/cover.jpg")',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  },
-  cardBox: {
-    height: "0",
-    overflow: "hidden",
-    backgroundColor: "white",
-    paddingTop: "calc(2073/1448 * 92.5%)",
-    position: "relative",
   },
   cardBoxInside: {
     position: "absolute",
@@ -102,10 +97,7 @@ const [styles] = createStyles({
     left: "0",
     width: "100%",
     height: "100%",
-    paddingRight: "1.5rem",
-  },
-  instructionCardBoxInside: {
-    paddingRight: "1.5rem",
+    padding: "1.5rem",
   },
   pointer: {
     position: "absolute",
@@ -123,47 +115,107 @@ const [styles] = createStyles({
 
 /*::
 type Props = {
-  count: number | typeof undefined
 };
 */
 const Counter = (props /*: Props */) => {
   // console.log(props.count.isInteger());
   return html`
     <div className="${styles.container}">
-      <div className="${styles.cardContainer}">
-        <img
-          class="${styles.card}"
-          src="./img/001-i-decide.png"
-          title="I decide"
-        />
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/cover.jpg"
+              title="I decide"
+            />
+          </div>
+        </div>
       </div>
-      <div className="${styles.cardContainer}">
-        <img
-          class="${styles.card}"
-          src="./img/002-i-decide-after-seeking-advice.png"
-          title="I decide after seeing advice"
-        />
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <div className="${styles.heightMachine}">
+              <div className="${styles.cardBoxInside}">
+                <ol>
+                  <h3>Instructions:</h3>
+                  <li>Pick a decision that needs to be made. Explain it</li>
+                  <li>
+                    Make sure everyone has a hand of 5 decision cards or this
+                    URL
+                  </li>
+                  <li>
+                    Everyone secretly picks a card indicating their role in the
+                    decision
+                  </li>
+                  <li>When everyone is ready, reveal the cards</li>
+                  <li>
+                    If there is agreement about who the owners are, wonderful!
+                  </li>
+                  <li>
+                    If there is disagreement, have everyone share their
+                    thinking. Then repeat card selection.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="${styles.cardContainer}">
-        <img
-          class="${styles.card}"
-          src="./img/003-we-decide-together.png"
-          title="We decide together"
-        />
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/001-i-decide.png"
+              title="I decide"
+            />
+          </div>
+        </div>
       </div>
-      <div className="${styles.cardContainer}">
-        <img
-          class="${styles.card}"
-          src="./img/004-i-advise.png"
-          title="I advise"
-        />
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/002-i-decide-after-seeking-advice.png"
+              title="I decide after seeing advice"
+            />
+          </div>
+        </div>
       </div>
-      <div className="${styles.cardContainer}">
-        <img
-          class="${styles.card}"
-          src="./img/005-please-let-me-know.png"
-          title="Please let me know"
-        />
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/003-we-decide-together.png"
+              title="We decide together"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/004-i-advise.png"
+              title="I advise"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/005-please-let-me-know.png"
+              title="Please let me know"
+            />
+          </div>
+        </div>
       </div>
     </div>
   `;
