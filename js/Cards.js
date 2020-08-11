@@ -64,6 +64,7 @@ const [styles] = createStyles({
     justifyContent: "center",
     scrollSnapAlign: "start",
     scrollSnapStop: "normal",
+    position: "relative",
   },
   cardContainer2: {
     display: "flex",
@@ -122,6 +123,7 @@ const Counter = (props /*: Props */) => {
   return html`
     <div className="${styles.container}">
       <div className="${styles.cardContainer1}">
+        <img class="${styles.pointer}" src="./img/hand-pointing.png" title="" />
         <div className="${styles.cardContainer2}">
           <div className="${styles.cardBox}">
             <img
