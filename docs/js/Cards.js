@@ -103,7 +103,7 @@ const [styles] = createStyles({
   },
   pointer: {
     position: "absolute",
-    top: "15px",
+    bottom: "15px",
     right: "15px",
     zIndex: "10",
     maxWidth: "10%",
