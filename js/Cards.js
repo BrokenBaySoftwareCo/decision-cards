@@ -32,8 +32,8 @@ rawStyles({
     paddingInlineStart: "0px",
   },
   li: {
-    lineHeight: "1.25rem",
-    paddingBottom: "1rem",
+    lineHeight: "1.1rem",
+    paddingBottom: ".7rem",
   },
 });
 
