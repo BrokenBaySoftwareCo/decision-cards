@@ -1,6 +1,6 @@
 // @flow
 import { h } from "../web_modules/preact.js";
-import Counter from "./Counter.js";
+import Counter from "./Cards.js";
 import Router from "../web_modules/preact-router.js";
 import { html } from "../web_modules/htm/preact.js";
 import { AppProvider } from "./AppContext.js";
