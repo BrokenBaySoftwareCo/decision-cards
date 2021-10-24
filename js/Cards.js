@@ -51,9 +51,9 @@ const [blink] = keyframes({
 const [styles] = createStyles({
   container: {
     height: "100%",
-    width: "700vw",
+    width: "900vw",
     display: "grid",
-    gridTemplate: '"a a a a a a a"',
+    gridTemplate: '"a a a a a a a a a"',
   },
   cardContainer1: {
     height: "100%",
@@ -75,7 +75,7 @@ const [styles] = createStyles({
   cardBox: {
     width: "95%",
     maxWidth: "400px",
-    borderRadius: "17px",
+    borderRadius: "21px",
     boxShadow: "5px 5px 5px #00000040",
     backgroundColor: "white",
     overflow: "hidden",
@@ -118,7 +118,7 @@ const [styles] = createStyles({
 type Props = {
 };
 */
-const Counter = (props /*: Props */) => {
+const Counter = (props /*: Props */) /*: string */ => {
   // console.log(props.count.isInteger());
   return html`
     <div className="${styles.container}">
@@ -128,8 +128,8 @@ const Counter = (props /*: Props */) => {
           <div className="${styles.cardBox}">
             <img
               class="${styles.card}"
-              src="./img/cover.jpg"
-              title="I decide"
+              src="./img/000-1-cover.png"
+              title="Cover"
             />
           </div>
         </div>
@@ -137,30 +137,11 @@ const Counter = (props /*: Props */) => {
       <div className="${styles.cardContainer1}">
         <div className="${styles.cardContainer2}">
           <div className="${styles.cardBox}">
-            <div className="${styles.heightMachine}">
-              <div className="${styles.cardBoxInside}">
-                <ol>
-                  <h3>Instructions:</h3>
-                  <li>Pick a decision that needs to be made. Explain it</li>
-                  <li>
-                    Make sure everyone has a hand of 5 decision cards or this
-                    URL
-                  </li>
-                  <li>
-                    Everyone secretly picks a card indicating their role in the
-                    decision
-                  </li>
-                  <li>When everyone is ready, reveal the cards</li>
-                  <li>
-                    If there is agreement about who the owners are, wonderful!
-                  </li>
-                  <li>
-                    If there is disagreement, have everyone share their
-                    thinking. Then repeat card selection.
-                  </li>
-                </ol>
-              </div>
-            </div>
+            <img
+              class="${styles.card}"
+              src="./img/000-2-instructions.png"
+              title="Cover"
+            />
           </div>
         </div>
       </div>
@@ -215,6 +196,28 @@ const Counter = (props /*: Props */) => {
               class="${styles.card}"
               src="./img/005-please-let-me-know.png"
               title="Please let me know"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/100-1-SELF Information.png"
+              title="SELF Information"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="${styles.cardContainer1}">
+        <div className="${styles.cardContainer2}">
+          <div className="${styles.cardBox}">
+            <img
+              class="${styles.card}"
+              src="./img/100-2_More Information.png"
+              title="More Information"
             />
           </div>
         </div>

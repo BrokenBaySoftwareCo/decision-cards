@@ -15,6 +15,7 @@ h3 {
 body {
 	font-family: "Poppins","Helvetica","Arial","Lucida",sans-serif;
 	font-size: .9rem;
+	background-image: url(/img/background_mobile.jpg);
 }
 
 html,

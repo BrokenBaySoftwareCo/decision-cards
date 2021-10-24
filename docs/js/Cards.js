@@ -5,7 +5,6 @@ import {
   useEffect,
   useState,
 } from "../web_modules/preact/hooks.js";
-import htm from "../web_modules/htm.js";
 import {
   rawStyles,
   createStyles,
@@ -13,8 +12,8 @@ import {
   keyframes,
 } from "../web_modules/simplestyle-js.js";
 import { AppContext } from "./AppContext.js";
+import { html } from "../web_modules/htm/preact.js";
 
-const html = htm.bind(h);
 const seed /*: number */ = parseInt(
   "cards".split("").reduce(
     (acc /*: string */, letter /*: string */) /*: string */ => {
@@ -119,7 +118,7 @@ const [styles] = createStyles({
 type Props = {
 };
 */
-const Counter = (props /*: Props */) => {
+const Counter = (props /*: Props */) /*: string */ => {
   // console.log(props.count.isInteger());
   return html`
     <div className="${styles.container}">
