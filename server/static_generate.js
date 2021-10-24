@@ -24,9 +24,12 @@ export const copyStaticFiles = () /*: void */ => {
     }
   };
 
+  if (!fs.existsSync("./public")) {
+    fs.mkdirSync("./public");
+  }
   // Copy in the static files
-  fs.copyFileSync("modernizr-config.json", "./public/modernizr-config.json");
   fs.copyFileSync("404.html", "./public/404.html");
+  fs.copyFileSync("modernizr-config.json", "./public/modernizr-config.json");
   fs.copyFileSync("browserconfig.xml", "./public/browserconfig.xml");
   fs.copyFileSync("favicon.ico", "./public/favicon.ico");
   fs.copyFileSync("humans.txt", "./public/humans.txt");
@@ -36,15 +39,6 @@ export const copyStaticFiles = () /*: void */ => {
   fs.copyFileSync("site.webmanifest", "./public/site.webmanifest");
   fs.copyFileSync("tile-wide.png", "./public/tile-wide.png");
   fs.copyFileSync("tile.png", "./public/tile.png");
-  fs.copyFileSync("android-chrome-192x192.png", "android-chrome-192x192.png");
-  fs.copyFileSync("android-chrome-384x384.png", "android-chrome-384x384.png");
-  fs.copyFileSync("apple-touch-icon.png", "apple-touch-icon.png");
-  fs.copyFileSync("favicon-16x16.png", "favicon-16x16.png");
-  fs.copyFileSync("favicon-32x32.png", "favicon-32x32.png");
-  fs.copyFileSync("icon.png", "icon.png");
-  fs.copyFileSync("mstile-150x150.png", "mstile-150x150.png");
-  fs.copyFileSync("tile-wide.png", "tile-wide.png");
-  fs.copyFileSync("tile.png", "tile.png");
   copyDir("js", "./public/js");
   copyDir("img", "./public/img");
   copyDir("css", "./public/css");
