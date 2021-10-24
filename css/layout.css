@@ -24,6 +24,7 @@ body,
 {
 	height: 100%;
 	overflow-y: hidden;
+	scroll-snap-type: x;
 }
 
 /* If you want to override your materialize css then you have to use media query for this like in your custom css file which should be defined below your materialize.css file */
