@@ -1,9 +1,9 @@
 // @flow
 import { h } from "../web_modules/preact.js";
-import Cards from "./Cards.js";
+import Counter from "./Cards.js";
 import Router from "../web_modules/preact-router.js";
-import { AppProvider } from "./AppContext.js";
 import { html } from "../web_modules/htm/preact.js";
+import { AppProvider } from "./AppContext.js";
 
 /*::
 type Props = {
@@ -14,7 +14,8 @@ const App /*: function */ = (props /*: Props */) => {
   return html`
     <${AppProvider} >
       <${Router} url="${props.url}">
-        <${Cards} path="/" />
+        <${Counter} count="1" path="/" />
+        <${Counter} count="6" path="/this/is/a/test/of/the/cache/script" />
       </${Router}>
     </${AppProvider} >
   `;
