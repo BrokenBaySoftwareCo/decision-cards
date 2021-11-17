@@ -37,3 +37,17 @@ if (
   };
   window.onresize(); // called to initially set the height.
 }
+
+// Cookie redirect
+const name = "shift314-decision-cards";
+const cDecoded = decodeURIComponent(document.cookie);
+const cArr = cDecoded.split("; ");
+let relocate = true;
+cArr.forEach((val) => {
+  if (val.indexOf(name) === 0) {
+    relocate = false;
+  }
+});
+if (relocate === true) {
+  window.location.assign("https://shift314.com/decisioncards/#access-cards");
+}
