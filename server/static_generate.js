@@ -28,30 +28,17 @@ export const copyStaticFiles = () /*: void */ => {
     fs.mkdirSync("./public");
   }
   // Copy in the static files
-  fs.copyFileSync("apple-icon-57x57.png", "./public/apple-icon-57x57.png");
-  fs.copyFileSync("apple-icon-60x60.png", "./public/apple-icon-60x60.png");
-  fs.copyFileSync("apple-icon-72x72.png", "./public/apple-icon-72x72.png");
-  fs.copyFileSync("apple-icon-76x76.png", "./public/apple-icon-76x76.png");
-  fs.copyFileSync("apple-icon-114x114.png", "./public/apple-icon-114x114.png");
-  fs.copyFileSync("apple-icon-120x120.png", "./public/apple-icon-120x120.png");
-  fs.copyFileSync("apple-icon-144x144.png", "./public/apple-icon-144x144.png");
-  fs.copyFileSync("apple-icon-152x152.png", "./public/apple-icon-152x152.png");
-  fs.copyFileSync("apple-icon-180x180.png", "./public/apple-icon-180x180.png");
-  fs.copyFileSync(
-    "android-icon-192x192.png",
-    "./public/android-icon-192x192.png",
-  );
-  fs.copyFileSync("favicon-32x32.png", "./public/favicon-32x32.png");
-  fs.copyFileSync("favicon-96x96.png", "./public/favicon-96x96.png");
-  fs.copyFileSync("favicon-16x16.png", "./public/favicon-16x16.png");
-  fs.copyFileSync("manifest.json", "./public/manifest.json");
-  fs.copyFileSync("ms-icon-144x144.png", "./public/ms-icon-144x144.png");
   fs.copyFileSync("404.html", "./public/404.html");
   fs.copyFileSync("modernizr-config.json", "./public/modernizr-config.json");
   fs.copyFileSync("browserconfig.xml", "./public/browserconfig.xml");
+  fs.copyFileSync("favicon.ico", "./public/favicon.ico");
   fs.copyFileSync("humans.txt", "./public/humans.txt");
+  fs.copyFileSync("icon.png", "./public/icon.png");
   fs.copyFileSync("index.html", "./public/index.html");
   fs.copyFileSync("robots.txt", "./public/robots.txt");
+  fs.copyFileSync("site.webmanifest", "./public/site.webmanifest");
+  fs.copyFileSync("tile-wide.png", "./public/tile-wide.png");
+  fs.copyFileSync("tile.png", "./public/tile.png");
   copyDir("js", "./public/js");
   copyDir("img", "./public/img");
   copyDir("css", "./public/css");
