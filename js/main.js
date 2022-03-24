@@ -16,7 +16,7 @@ cArr.forEach((val) => {
   }
 });
 if (relocate === true) {
-  //   window.location.assign("https://shift314.com/decisioncards/#access-cards");
+  window.location.assign("https://shift314.com/decisioncards/#access-cards");
 }
 
 // Alternative to load event

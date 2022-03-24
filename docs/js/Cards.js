@@ -101,12 +101,6 @@ const [styles] = createStyles({
     paddingTop: "0.5rem",
   },
   pointer: {
-    position: "absolute",
-    bottom: "15px",
-    right: "15px",
-    zIndex: "10",
-    maxWidth: "10%",
-    filter: "invert(1)",
     animation: `${blink} normal 3s infinite ease-in-out`,
   },
   title: {
@@ -121,101 +115,112 @@ type Props = {
 const Counter = (props /*: Props */) /*: string */ => {
   // console.log(props.count.isInteger());
   return html`
-    <div className="${styles.container}">
-      <div className="${styles.cardContainer1}">
-        <img class="${styles.pointer}" src="./img/hand-pointing.png" title="" />
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+    <div className="${"allCardsContainer"}">
+      <div className="${"cardContainer1"}">
+        <img
+          class="${"pointer " + styles.pointer}"
+          src="./img/hand-pointing.png"
+          title=""
+        />
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/000-1-cover.png"
               title="Cover"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <img
+          class="${"pointer " + styles.pointer}"
+          src="./img/hand-pointing.png"
+          title=""
+        />
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              id="card-instructions"
+              class="${"cardImage"}"
               src="./img/000-2-instructions.png"
               title="Cover"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/001-i-decide.png"
               title="I decide"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/002-i-decide-after-seeking-advice.png"
               title="I decide after seeing advice"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/003-we-decide-together.png"
               title="We decide together"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/004-i-advise.png"
               title="I advise"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              id="card-please-let-me-know"
+              class="${"cardImage"}"
               src="./img/005-please-let-me-know.png"
               title="Please let me know"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/100-1-SELF Information.png"
               title="SELF Information"
             />
           </div>
         </div>
       </div>
-      <div className="${styles.cardContainer1}">
-        <div className="${styles.cardContainer2}">
-          <div className="${styles.cardBox}">
+      <div className="${"cardContainer1"}">
+        <div className="${"cardContainer2"}">
+          <div className="${"cardBox"}">
             <img
-              class="${styles.card}"
+              class="${"cardImage"}"
               src="./img/100-2_More Information.png"
               title="More Information"
             />
