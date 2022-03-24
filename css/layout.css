@@ -97,7 +97,7 @@ body,
     font-size: 1rem;
     color: #333;
   }
-  .card-box {
+  .cardBox {
     width: 95%;
     max-width: 400px;
     border-radius: 21px;
@@ -105,7 +105,7 @@ body,
     background-color: white;
     overflow: hidden;
   }
-  .card {
+  .cardImage {
     width: 100%;
   }
   .heightMachine {
@@ -126,7 +126,7 @@ body,
     padding-top: 0.5rem;
   }
   .pointer {
-position: absolute;
+	position: absolute;
     bottom: 15px;
     right: 15px;
     z-index: 10;
