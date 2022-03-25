@@ -15,7 +15,7 @@ cArr.forEach((val) => {
     relocate = false;
   }
 });
-if (relocate === true) {
+if (relocate === true && window.location.hostname !== "localhost") {
   window.location.assign("https://shift314.com/decisioncards/#access-cards");
 }
 
@@ -50,6 +50,5 @@ document.onreadystatechange = function () {
     //   left: window.innerWidth * 3,
     //   behavior: "smooth",
     // });
-    console.log("Scrolled");
   }
 };

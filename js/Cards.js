@@ -138,10 +138,9 @@ const Counter = (props /*: Props */) /*: string */ => {
           src="./img/hand-pointing.png"
           title=""
         />
-        <div className="${"cardContainer2"}">
+        <div id="card-instructions" className="${"cardContainer2"}">
           <div className="${"cardBox"}">
             <img
-              id="card-instructions"
               class="${"cardImage"}"
               src="./img/000-2-instructions.png"
               title="Cover"
@@ -194,10 +193,9 @@ const Counter = (props /*: Props */) /*: string */ => {
         </div>
       </div>
       <div className="${"cardContainer1"}">
-        <div className="${"cardContainer2"}">
+        <div id="card-please-let-me-know" className="${"cardContainer2"}">
           <div className="${"cardBox"}">
             <img
-              id="card-please-let-me-know"
               class="${"cardImage"}"
               src="./img/005-please-let-me-know.png"
               title="Please let me know"
