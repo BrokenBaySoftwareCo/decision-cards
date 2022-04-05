@@ -34,17 +34,17 @@ document.onreadystatechange = function () {
           inline: "nearest",
         });
       }
+      setTimeout(() => {
+        const cardInstructions = document.getElementById("card-cover");
+        if (cardInstructions !== null) {
+          cardInstructions.scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "nearest",
+          });
+        }
+      }, 2000);
     }, 1000);
-    setTimeout(() => {
-      const cardInstructions = document.getElementById("card-instructions");
-      if (cardInstructions !== null) {
-        cardInstructions.scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-          inline: "nearest",
-        });
-      }
-    }, 2000);
     // window.scrollBy({
     //   top: 0,
     //   left: window.innerWidth * 3,
