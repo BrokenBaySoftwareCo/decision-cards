@@ -6,7 +6,7 @@ import { html } from "../web_modules/htm/preact.js";
 hydrate(html` <${App} /> `, document.getElementById("goodthing"));
 
 // Cookie redirect
-const name = "shift314-decision-cards";
+const name = "e2b-decision-cards";
 const cDecoded = decodeURIComponent(document.cookie);
 const cArr = cDecoded.split("; ");
 let relocate = true;
@@ -16,7 +16,7 @@ cArr.forEach((val) => {
   }
 });
 if (relocate === true && window.location.hostname !== "localhost") {
-  window.location.assign("https://shift314.com/decisioncards/#access-cards");
+  window.location.assign("https://evolve2b.com/decisioncards/");
 }
 
 // Alternative to load event
